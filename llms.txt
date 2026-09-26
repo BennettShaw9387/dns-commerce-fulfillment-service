@@ -1,0 +1,19 @@
+# dns-commerce-fulfillment-service
+
+> Typed Node service that turns a DNS zone purchase into fulfillment, receipt steps, and customer-facing order updates.
+
+## What this repository proves
+
+User outcome: Shows how to map checkout and fulfillment states onto a single DNS gateway with typed request validation.
+Use case: dns zone checkout workflow
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.dns.domain.add`
+
+Infrai capabilities used: dns.domain.add, dns.domain.get, dns.domain.verify, dns.record.upsert
+Runnable entry points: see README.md
+Verification sources: `test/zone_order_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

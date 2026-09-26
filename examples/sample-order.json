@@ -1,0 +1,27 @@
+{
+  "orderId": "ord_1001",
+  "customerEmail": "ops@agentmail.shop",
+  "domain": "agentmail.shop",
+  "vendor": "migrated-registrar",
+  "records": [
+    {
+      "record_type": "TXT",
+      "name": "@",
+      "content": "v=spf1 include:mail.example.test ~all",
+      "ttl": 300
+    },
+    {
+      "record_type": "CNAME",
+      "name": "track",
+      "content": "tracking.agentmail.shop",
+      "ttl": 300
+    },
+    {
+      "record_type": "MX",
+      "name": "@",
+      "content": "mail.agentmail.shop",
+      "priority": 10,
+      "ttl": 300
+    }
+  ]
+}
